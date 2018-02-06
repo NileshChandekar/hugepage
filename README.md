@@ -33,7 +33,7 @@
 ~~~
 echo 'GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX hugepagesz=2M hugepages=2048 transparent_hugepage=never"' > /etc/default/grub
 ~~~
-# cat /etc/default/grub
+cat /etc/default/grub
 ~~~
 GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX hugepagesz=2M hugepages=2048 transparent_hugepage=never"
 ~~~
