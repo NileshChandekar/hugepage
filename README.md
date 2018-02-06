@@ -1,7 +1,7 @@
 ### HugePage Configuration ###
 
-	### Persistent huge pages are not enabled by default in most environments
-	### The number of persistent huge pages on the host can be queried by checking /proc/meminfo. 
+    ### Persistent huge pages are not enabled by default in most environments
+    ### The number of persistent huge pages on the host can be queried by checking /proc/meminfo. 
 
 	~~~
 	[root@locallaptop ~]# cat /proc/meminfo  |grep -i huge
