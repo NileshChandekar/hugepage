@@ -1,23 +1,22 @@
 ### HugePage Configuration ###
 
-### ### Persistent huge pages are not enabled by default in most environments
-### ### The number of persistent huge pages on the host can be queried by checking /proc/meminfo. 
+###### Persistent huge pages are not enabled by default in most environments
+###### The number of persistent huge pages on the host can be queried by checking /proc/meminfo. 
 
-### ~~~
-### [root@locallaptop ~]# cat /proc/meminfo  |grep -i huge
-### AnonHugePages:         0 kB
-### ShmemHugePages:        0 kB
-### HugePages_Total:       0
-### HugePages_Free:        0
-### HugePages_Rsvd:        0
-### HugePages_Surp:        0
-### Hugepagesize:       2048 kB
-### [root@locallaptop ~]#
-### ~~~
+ ~~~
+ [root@locallaptop ~]# cat /proc/meminfo  |grep -i huge
+ AnonHugePages:         0 kB
+ ShmemHugePages:        0 kB
+ HugePages_Total:       0
+ HugePages_Free:        0
+ HugePages_Rsvd:        0
+ HugePages_Surp:        0
+ Hugepagesize:       2048 kB
+ [root@locallaptop ~]#
+ ~~~
 
-### Sometimes 
 
-### ### Lets check the meaning of each parameter 
+###### Lets check the meaning of each parameter 
 
 ###   ## `AnonHugePages` - refered as transparent huge pages // In first case there is `0` , transparent or annonymous huge pages. 
 ###   ## `HugePages_Total` - persistent huge page // In this case there is `0` Total huge pages are available. 
