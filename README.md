@@ -18,9 +18,10 @@
 
 ###### Lets check the meaning of each parameter 
 
-######`AnonHugePages` - refered as transparent huge pages // In first case there is `0` , transparent or annonymous huge pages. 
+###### `AnonHugePages` - refered as transparent huge pages // In first case there is `0` , transparent or annonymous huge pages. 
+~~~
 ###### `HugePages_Total` - persistent huge page // In this case there is `0` Total huge pages are available. 
-
+~~~
 ###### Identifying contiguous areas of memory is a issue for all huge page sizes, but it is particularly problematic for larger huge page sizes such as 1 GB huge pages. 
 ###### Allocating huge pages at boot time will ensure the correct number of huge pages is always available, while allocating them at run time can fail if memory has become too fragmented.
 ###### To allocate huge pages at run time, the kernel boot parameters must be extended to include some huge page-specific parameters. 
